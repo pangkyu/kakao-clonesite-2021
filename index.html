@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to kakao Talk Clone</title>
+</head>
+<body>
+    <div class = "status-bar"> <!-- 카카오톡의 헤더 부분을 담당-->
+        <div class = "status-bar__column">
+            <span>NO Service</span>
+            <i class = "fas fa-wifi"></i>
+        </div>
+        <div class = "status-bar__column">
+            <span>18:30</span>
+        </div>
+        <div class = "status-bar__column">
+            <span>91%</span> 
+            <i class = "fas fa-battery-full fa-lg"></i>
+            <i class = "fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class = "welcome-header">
+        <h1 class = "welcome-header__title">Welcome to KakaoTalk Clone</h1>
+        <p class = "welcome-header__text">
+            If you have a kakao Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id = "login-form">
+        <input type = "text" placeholder="Email or phone number"/>
+        <input type = "password" placeholder = "password"/>
+        <input type = "submit" value = "Log in"/>
+        <input type = "submit" value = "Sign up"/>
+        <a href = "#"> Find Kakao Account or Password</a>
+    </form>
+
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
