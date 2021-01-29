@@ -28,3 +28,29 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+/* 원래는 js을 이용하여 삭제를해야함.
+   js로 삭제안하면 inspect시 html element에 div값이 그대로 남아있게 됨
+   ++ friends페이지를 갈때마다 이 애니메이션을 보아야함*/
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}
