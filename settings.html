@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>settings</title>
 </head>
+
 <body>
-    <div class = "status-bar"> <!-- 카카오톡의 헤더 부분을 담당-->
-        <div class = "status-bar__column">
+    <div class="status-bar">
+        <!-- 카카오톡의 헤더 부분을 담당-->
+        <div class="status-bar__column">
             <span>NO Service</span>
-            <i class = "fas fa-wifi"></i>
+            <i class="fas fa-wifi"></i>
         </div>
-        <div class = "status-bar__column">
+        <div class="status-bar__column">
             <span>18:30</span>
         </div>
-        <div class = "status-bar__column">
-            <span>91%</span> 
-            <i class = "fas fa-battery-full fa-lg"></i>
-            <i class = "fas fa-bolt"></i>
+        <div class="status-bar__column">
+            <span>91%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
         </div>
     </div>
 
-   
 
-    
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href = "more.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__column">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-lg"></i>
+        </div>
+    </header>
 
-    <main class = "main-screen ">
-       
+
+    <main class="main-screen ">
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kakao Lab</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-column">Latest Version</div>
+            </li>
+        </ul>
     </main>
-   
-    <nav class = "nav">
-        <ul class = "nav__list">
-            <li class = "nav__btn">
-                <a class = "nav__link" href = "friends.html">
-                    <i class = "far fa-user fa-2x"></i>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
                 </a>
             </li>
-            <li class = "nav__btn">
-                <a class = "nav__link" href = "chats.html">
-                   <span class = "nav__notification badge">1</span>
-                   <i class = "far fa-comment fa-2x"></i>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
-            <li class = "nav__btn">
-                <a class = "nav__link" href = "find.html">
-                    <i class = "fas fa-search fa-2x"></i>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
                 </a>
             </li>
-            <li class = "nav__btn">
-                <a class = "nav__link" href = "more.html">
-                    <span class = "nav__detail"></span>
-                    <i class = "fas fa-ellipsis-h fa-2x"></i>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__detail"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
                 </a>
             </li>
         </ul>
     </nav>
-    
 
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
